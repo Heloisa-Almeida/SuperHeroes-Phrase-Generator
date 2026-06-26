@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +7,8 @@
 
 body {
     height: 100vh;
-    background-color: #f0e4d0; /* bege */
+    background-color: #f0e4d0; 
     font-family: 'Montserrat', sans-serif;
-
-    /* centraliza na horizontal, mas começa do topo na vertical */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +30,7 @@ h1 {
     margin-bottom: 60px;
     min-width: 300px;
     max-width: 500px;
-    min-height: 200px; /* altura fixa: o botão não se move quando o texto muda */
-
-    /* centraliza o texto dentro da caixa, mesmo que ela seja maior que o texto */
+    min-height: 200px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +44,7 @@ h1 {
 }
 
 button {
-    background-color: #d8c3a0; /* tom mais escuro que o bege do fundo */
+    background-color: #d8c3a0; 
     color: #4a3f35;
     border: none;
     border-radius: 25px;
@@ -56,11 +52,10 @@ button {
     font-size: 16px;
     cursor: pointer;
 
-    /* transição suave pro hover */
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #c2a878; /* fica ainda mais escuro */
-    transform: scale(1.1); /* aumenta um pouco */
+    background-color: #c2a878; 
+    transform: scale(1.1);
 }
