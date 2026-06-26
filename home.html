@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Frases</title>
+    <link rel="icon" href="C:\Users\Heloisa\Desktop\Treinos Faculdade\Projetos individuais\Gerador de frases\css\imageIcon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Phrase Generator</h1>
+
+        <div id="div_phrase">
+            <p id="texto_frase"></p>
+        </div>
+
+        <button onclick="generate()">Generate</button>
+    </div>
+
+    <script>
+        let phrases = [
+            `"With great power comes great responsibility."
+            - Uncle Ben`,
+            `"Dreams save us. Dreams lift us up and transform us... I'll never stop fighting. Ever."
+            - Superman`,
+            `"I believe there's a hero in all of us."
+            - Aunt May`,
+            `"The world has changed. None of us can go back. All we can do is our best. And sometimes the best that we can do is to start over."
+            - Captain America`,
+            `"Whatever happens tomorrow, you must promise me one thing: that you will stay who you are. Not a perfect soldier, but a good man."
+            - Dr. Abraham Erskine`
+        ];
+
+        function generate() {
+            let indice = Math.floor(Math.random() * phrases.length);
+            document.getElementById("texto_frase").textContent = phrases[indice];
+        }
+    </script>
+</body>
+</html>
